@@ -4,6 +4,9 @@
 s = ARGV[0]
 i = 0;
 s3 = '';
+if s == nil
+  exit;
+end;
 while (i < s.size - 1)
   j = 0;
   is_double = false
