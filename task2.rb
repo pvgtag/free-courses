@@ -19,7 +19,7 @@ while (i < s.size - 1)
       s3 = s1
       is_double = true
     end;
-    if !is_double then
+    if is_double then
       break;
     end;
     j += 1;
