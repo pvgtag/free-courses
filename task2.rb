@@ -14,8 +14,8 @@ if (s1 != nil) then
     #  break
     #end
     if ( s1.include?(s2))
-      s3 = s2
-      break
+       s3 = s2
+       break
     end
   end  
 end
