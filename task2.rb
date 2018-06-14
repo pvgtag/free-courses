@@ -9,8 +9,12 @@ if (s1 != nil) then
   while i <= s.length
     s2 = s[0, i]
     i = i + 1
-    if (not s1.include?(s2))
-      s3 = s2[0..-2]
+    # if (not s1.include?(s2))
+    #  s3 = s2[0..-2]
+    #  break
+    #end
+    if ( s1.include?(s2))
+      s3 = s2
       break
     end
   end  
