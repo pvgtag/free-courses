@@ -1,22 +1,27 @@
 # Task 2
 
 # Put your code here
-s = ARGV[0]
-s1 = s[1, s.length]
-s3 = ''
-if (s1 != nil) then
-  i = 0
-  while i <= s.length
-    s2 = s[0, i]
-    i = i + 1
-    # if (not s1.include?(s2))
-    #  s3 = s2[0..-2]
-    #  break
-    #end
-    if ( s1.include?(s2))
-       s3 = s2
-       break
-    end
-  end  
+s = ARGV[0].chomp
+i = 0;
+s3 = '';
+while (i < s.size - 1)
+  j = 0;
+  is_double = false
+  while (j < s.size - i)
+    s1 = s[j,i];
+    # puts s1;
+    idx1 = s.index(s1);
+    # puts s.rindex(s1);
+    if (s.index(s1) != s.rindex(s1))
+      s3 = s1
+      is_double = true
+    end;
+    j += 1;
+  end;
+  if !is_double then
+    break;
+  end;
+  i += 1;
 end
-puts s3
+puts s3;
+
