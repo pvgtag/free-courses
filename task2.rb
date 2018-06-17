@@ -18,6 +18,9 @@ if s != nil
         s3 = s1
         is_double = true
       end;
+      if is_double
+		break
+      end
       j += 1;
     end;
     if !is_double then
